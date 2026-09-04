@@ -4,3 +4,8 @@ build
 # West files
 .west
 deps
+
+#IDE
+.vs
+.vscode
+.idea
