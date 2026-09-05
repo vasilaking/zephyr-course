@@ -1,0 +1,1 @@
+// This file is ignored since I have made an overlay file for my esp32 in boards folder, since the esp32 original DTS doesn't have led0 assigned. I have made the alias in there
