@@ -1,0 +1,25 @@
+identifier: esp32_wroom_32d/esp32/procpu
+name: ESP32-WROOM-32D PROCPU
+type: mcu
+arch: xtensa
+toolchain:
+  - zephyr
+ram: 8192
+supported:
+  - adc
+  - dac
+  - gpio
+  - i2c
+  - i2s
+  - watchdog
+  - uart
+  - nvs
+  - pwm
+  - spi
+  - counter
+  - entropy
+  - input
+  - crypto
+  - retained_mem
+  - netif:wifi
+vendor: espressif
