@@ -1,6 +1,13 @@
 # Build
 build
 
+#zephyr files
+bootloader
+/doc/
+modules
+tools
+zephyr
+
 # West files
 .west
 deps
@@ -9,3 +16,6 @@ deps
 .vs
 .vscode
 .idea
+
+#venv
+.venv
