@@ -1,0 +1,6 @@
+board:
+  name: esp32_wroom_32d_scratch
+  full_name: ESP32-WROOM-32D-SCRATCH
+  vendor: espressif
+  socs:
+  - name: esp32

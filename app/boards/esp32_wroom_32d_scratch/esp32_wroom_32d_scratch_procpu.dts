@@ -1,0 +1,29 @@
+/dts-v1/;
+#include <espressif/esp32/esp32_wrover_e_n4r8.dtsi>
+#include <espressif/partitions_0x1000_amp.dtsi>
+/ {
+	model = "Espressif ESP32-WROOM-32D-SCRATCH PROCPU";
+	compatible = "espressif,esp32";
+
+	aliases {
+		app_led = &led0;
+	};
+
+	leds {
+        	compatible = "gpio-leds";
+		led0: led_0 {
+			gpios = <&gpio0 2 GPIO_ACTIVE_HIGH>;
+			label = "Status LED";
+		};
+	};
+
+	chosen {
+		zephyr,sram = &sram1;
+		zephyr,flash = &flash0;
+		zephyr,code-partition = &slot0_partition;
+	};
+};
+
+&gpio0 {
+	status = "okay";
+};

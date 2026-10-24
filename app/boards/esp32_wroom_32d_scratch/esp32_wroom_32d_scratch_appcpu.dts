@@ -1,0 +1,13 @@
+/dts-v1/;
+#include <espressif/esp32/esp32_appcpu.dtsi>
+#include <espressif/partitions_0x1000_amp.dtsi>
+/ {
+	model = "Espressif ESP32-WROOM-32D-SCRATCH APPCPU";
+	compatible = "espressif,esp32";
+
+	chosen {
+		zephyr,sram = &sram1;
+		zephyr,flash = &flash0;
+		zephyr,code-partition = &slot0_appcpu_partition;
+	};
+};
